@@ -1,0 +1,10 @@
+:root {
+  --primary-color: #6424FF;
+  --secondary-color: #06F48A;
+  --primary-font: Raleway, sans-serif;
+  --secondary-font: 'SF Compact Display', sans-serif;
+}
+
+html {
+  font-family: var(--primary-font);
+}

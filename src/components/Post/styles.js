@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Layout = styled.div``;
 
 export const PostCard = styled.article`
-  background-color: #ffff;
+  background-color: var(--secondary-font-color);
   padding: 30px 25px;
   border-radius: 8px;
 `;
@@ -22,7 +22,7 @@ export const Author = styled.p`
 `;
 
 export const Date = styled.p`
-  color: #ffff;
+  color: var(--secondary-font-color);
   font-size: 1.6rem;
   font-weight: 700;
   margin-top: 10px;

@@ -30,7 +30,7 @@ export const LandingContent = styled.section`
   width: 100%;
   height: 413px;
   padding: 30px 26px;
-  color: #ffff;
+  color: var(--secondary-font-color);
   display: flex;
   flex-direction: column;
   justify-content: center;

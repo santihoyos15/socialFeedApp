@@ -1,3 +1,7 @@
 import { Button } from './styles';
 
-export const PrimaryButton = ({ children }) => <Button>{children}</Button>;
+export const PrimaryButton = ({ width, height, children }) => (
+  <Button width={width} height={height}>
+    {children}
+  </Button>
+);

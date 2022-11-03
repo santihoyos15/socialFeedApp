@@ -3,6 +3,8 @@
   --secondary-color: #06F48A;
   --primary-font: Raleway, sans-serif;
   --secondary-font: 'SF Compact Display', sans-serif;
+  --primary-font-color: #000;
+  --secondary-font-color: #ffff;
 }
 
 * {

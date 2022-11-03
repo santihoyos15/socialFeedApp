@@ -1,10 +1,13 @@
-import { Header } from "./components/Header/Header"
+import { Header } from './components/Header/Header';
+import { Feed } from './components/Feed/Feed';
 
 function App() {
-
   return (
-    <Header />
-  )
+    <>
+      <Header />
+      <Feed />
+    </>
+  );
 }
 
-export default App
+export default App;

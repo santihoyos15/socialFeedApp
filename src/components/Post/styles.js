@@ -9,21 +9,21 @@ export const PostCard = styled.article`
 `;
 
 export const Content = styled.p`
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 500;
   line-height: 20px;
 `;
 
 export const Author = styled.p`
   color: var(--primary-color);
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 700;
   line-height: 27px;
 `;
 
 export const Date = styled.p`
   color: #ffff;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
   margin-top: 10px;
 `;

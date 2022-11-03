@@ -39,7 +39,7 @@ export const LandingContent = styled.section`
 `;
 
 export const Title = styled.h1`
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: 800;
   line-height: 38px;
   letter-spacing: 0em;
@@ -47,7 +47,7 @@ export const Title = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
   line-height: 27px;
   letter-spacing: 0em;
@@ -56,7 +56,7 @@ export const Subtitle = styled.p`
 
 export const HyperLink = styled.a`
   color: inherit;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0em;

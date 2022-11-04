@@ -1,8 +1,11 @@
 import { useCallback, useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { postsFormatter } from '../utils/postsFormatter';
+import { selectPosts, setPosts } from '../components/Feed/postsSlice';
 
 export const usePosts = (feedURL, numOfPosts, updateInterval) => {
-  const [posts, setPosts] = useState([]);
+  const posts = useSelector(selectPosts);
+  const dispatch = useDispatch();
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
 
@@ -10,10 +13,11 @@ export const usePosts = (feedURL, numOfPosts, updateInterval) => {
     const formattedURL = `${feedURL}?limit=${numOfPosts}${
       posts.length ? `start_id=${posts[0].id}` : ''
     } `;
+
     fetch(formattedURL)
       .then((res) => res.json())
       .then((data) => {
-        setPosts(postsFormatter(data, numOfPosts));
+        dispatch(setPosts(postsFormatter(data, numOfPosts)));
         setIsError(false);
         setIsLoading(false);
       })

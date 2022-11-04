@@ -8,7 +8,11 @@ function App() {
   return (
     <>
       <Header />
-      <Feed />
+      <Feed
+        URL="http://api.massrelevance.com/MassRelDemo/kindle.json"
+        numOfPosts={5}
+        updateInterval={2000}
+      />
       <Description />
       <Advertisement />
       <Footer />

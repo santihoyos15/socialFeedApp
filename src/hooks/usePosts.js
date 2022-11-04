@@ -12,7 +12,7 @@ export const usePosts = (feedURL, numOfPosts, updateInterval) => {
   const getAndSetPosts = useCallback(() => {
     const formattedURL = `${feedURL}?limit=${numOfPosts}${
       posts.length ? `start_id=${posts[0].id}` : ''
-    } `;
+    }/`;
 
     fetch(formattedURL)
       .then((res) => res.json())

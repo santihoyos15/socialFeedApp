@@ -7,10 +7,10 @@ import {
   Title,
   Subtitle,
   HyperLink,
+  PrimaryButton,
+  SecondaryButton,
 } from './styles';
-import tidalLogo from '../../assets/commons/tidalLogo.svg';
-import { PrimaryButton } from '../PrimaryButton/PrimaryButton';
-import { SecondaryButton } from '../SecondaryButton/SecondaryButton';
+import tidalLogo from '../../assets/commons/svg/tidalLogo.svg';
 
 export const Header = () => (
   <HeaderComp>
@@ -25,7 +25,7 @@ export const Header = () => (
           When you take this quiz, you'll get a free report that outlines YOUR
           Readiness Rating.
         </Subtitle>
-        <PrimaryButton height="74px">START QUIZ</PrimaryButton>
+        <PrimaryButton>START QUIZ</PrimaryButton>
         <HyperLink href="#">Learn more about Readiness Raitings</HyperLink>
       </LandingContent>
     </LowerHeader>

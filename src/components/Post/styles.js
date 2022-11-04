@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../utils/stylesHelpers';
 
 export const Layout = styled.div``;
 
@@ -12,6 +13,10 @@ export const Content = styled.p`
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 20px;
+  @media ${device.desktop} {
+    font-size: 1.8rem;
+    line-height: 27px;
+  }
 `;
 
 export const Author = styled.p`
@@ -26,4 +31,8 @@ export const Date = styled.p`
   font-size: 1.6rem;
   font-weight: 700;
   margin-top: 10px;
+
+  @media ${device.desktop} {
+    font-size: 2rem;
+  }
 `;

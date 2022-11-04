@@ -1,5 +1,5 @@
 import { Copyright, FooterComp, Logo } from './styles';
-import tidalLogo from '../../assets/commons/tidalLogo.svg';
+import tidalLogo from '../../assets/commons/svg/tidalLogo.svg';
 
 export const Footer = () => (
   <FooterComp>
